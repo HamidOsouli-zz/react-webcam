@@ -1,4 +1,4 @@
-# react-webcam
+# webcam-react
 
 [![Build Status][build-badge]][build]
 ![downloads][downloads-badge]

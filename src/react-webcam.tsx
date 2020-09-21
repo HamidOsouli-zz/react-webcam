@@ -248,10 +248,22 @@ export default class Webcam extends React.Component<WebcamProps, WebcamState> {
       navigator.mediaDevices
         .getUserMedia(constraints)
         .then(stream => {
-          this.handleUserMedia(null, stream);
+          setTimeout(() => {
+            this.handleUserMedia(null, stream);
+          }, 500);
+        })
+        .catch(() => {
+          // in case of any error , we try again with default constraints
+          navigator.mediaDevices
+        .getUserMedia({video: true})
+        .then(stream => {
+          setTimeout(() => {
+            this.handleUserMedia(null, stream);
+          }, 500);
         })
         .catch(e => {
           this.handleUserMedia(e);
+        });
         });
     };
 
