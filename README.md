@@ -7,6 +7,7 @@
 
 https://www.npmjs.com/package/webcam-react
 
+This is a fork of react-webcam with a setTimeout of 500ms for ensuring the stream object, and also retry in case of failiure with the default constraints.
 Webcam component for React. See [http://caniuse.com/#feat=stream](http://caniuse.com/#feat=stream)
 for browser compatibility.
 
