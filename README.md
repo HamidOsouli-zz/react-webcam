@@ -5,7 +5,7 @@
 
 <img src="Logotype primary.png" width="70%" height="70%" />
 
-https://www.npmjs.com/package/react-webcam
+https://www.npmjs.com/package/webcam-react
 
 Webcam component for React. See [http://caniuse.com/#feat=stream](http://caniuse.com/#feat=stream)
 for browser compatibility.
@@ -15,7 +15,7 @@ Note: Browsers will throw an error if the page is loaded from insecure origin. I
 ## Installation
 
 ```
-npm install react-webcam
+npm install webcam-react
 ```
 
 ## Demo
@@ -26,7 +26,7 @@ https://codepen.io/mozmorris/pen/JLZdoP
 
 ```jsx
 import React from "react";
-import Webcam from "react-webcam";
+import Webcam from "webcam-react";
 
 const WebcamComponent = () => <Webcam />;
 ```
